@@ -65,3 +65,21 @@ For our T-Test of Lot 2, our t-value is 0.51745 and our sample mean is 1500.2. W
 #### Statistical Significance of Population Mean From Lot 3
 Finally for our T-Test of Lot 3, our t-value is -2.0916 and our sample mean is 1496.14. With our p-value of 0.04168 being **less** than the common significance level of 0.05, we **do have** sufficient evidence to reject the null hypothesis and we can determine that the two means **are not** statistically similar.
 
+## Study Design: MechaCar vs Competition
+
+### What metric or metrics are you going to test?
+- Fuel economy
+- Type of vehicle/motor (gasoline, electric, hybrid)
+- Availability
+- Depreciation/resale value
+- Average vehicle life span
+
+### What is the null hypothesis or alternative hypothesis?
+- Null Hypothesis - The type of vehicle/motor does not significantly impact the fuel economy, availability, depreciation/resale value, or average life span.
+- Alternative Hypthesis - The type of vehicle/motor does significantly impact the fuel economy, availability, depreciation/resale value, or average life span.
+
+### What statistical test would you use to test the hypothesis? And why?
+- To statistically test these metrics, we may also use a multiple linear regression to help determine the statistical difference between the type of vehicle/motor and its fuel economy, availability, depreciation/resale value, and average life span. For example. an electric protoype may show better fuel economy but can also affect the availability of the vehicle. A more specific example of its potential competition would be Tesla's electric vehicles. With eletric vehicles having excellent fuel economy and a long life-span, the demand for the vehicle significantly surpasses that of the supply.
+
+### What data is needed to run the statistical test?
+- Numerical data may be needed in regards to the car's fuel economy (miles per gallon) and also nominal data related to the type of vehicle/motor.
