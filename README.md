@@ -30,4 +30,38 @@ We can refer to the r-value from our analysis to help determine if the linear mo
 
 #### The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-The design specifications for the MechaCar suspension coils accurately dictate that the variance of all suspension coils must not exceed 100 pounds per square inch for all manufacturing lots given our Total_Summary dataframe shown above. Per our Lot_Summary summary statistics, it appears Lot 1 and 2 do not exceed 100 pounds per square inch with variances of 0.98 and 7.47. However, Lot 3 does exceed 100 pounds per square inch with a variance of 170.29.
+The design specifications for the MechaCar suspension coils accurately dictate that the variance of all suspension coils must not exceed 100 pounds per square inch for all manufacturing lots with a variance of 62.29 given our Total_Summary dataframe shown above. Per our Lot_Summary summary statistics, it appears Lot 1 and 2 do not exceed 100 pounds per square inch with variances of 0.98 and 7.47. However, Lot 3 does exceed 100 pounds per square inch with a variance of 170.29.
+
+
+## T-Test on Suspension Coils
+
+### Summary T-Test on all Manufacturing Lots
+
+![image](https://user-images.githubusercontent.com/89496798/151729583-713fa62f-904c-4411-821a-e6ee8cf2ed7b.png)
+
+#### Statistical Significance of Population Mean
+Given our T-Test on all manufacturing lots, our t-value is -1.8931 and our sample mean is 1498.78. With our p-value of 0.06028 being greater than the common significance level of 0.05, we don't have sufficient evidence to reject the null hypothesis and we can determine that the two means are statistically similar. We can break this down further by running t-tests on all individual manufacturing lots.
+
+## Summary T-Test on Lots 1, 2, and 3
+
+### Lot 1
+
+![image](https://user-images.githubusercontent.com/89496798/151730682-7ad5ca18-2489-440b-8d62-3a66fc991e49.png)
+
+#### Statistical Significance of Population Mean From Lot 1
+As for our T-Test of Lot 1, our t-value is 0 and our sample mean is 1500. With our p-value of 1 being greater than the common significance level of 0.05, we don't have sufficient evidence to reject the null hypothesis and we can determine that the two means are statistically similar.
+
+### Lot 2
+
+![image](https://user-images.githubusercontent.com/89496798/151730709-f5d9352a-525b-40b2-b4c4-d2d37e261796.png)
+
+#### Statistical Significance of Population Mean From Lot 2
+For our T-Test of Lot 2, our t-value is 0.51745 and our sample mean is 1500.2. With our p-value of 0.6072 being greater than the common significance level of 0.05, we don't have sufficient evidence to reject the null hypothesis and we can determine that the two means are statistically similar.
+
+### Lot 3
+
+![image](https://user-images.githubusercontent.com/89496798/151730741-8f91675d-2f69-4b6b-b3cf-1699d07d4acc.png)
+
+#### Statistical Significance of Population Mean From Lot 3
+Finally for our T-Test of Lot 3, our t-value is -2.0916 and our sample mean is 1496.14. With our p-value of 0.04168 being **less** than the common significance level of 0.05, we **do have** sufficient evidence to reject the null hypothesis and we can determine that the two means **are not** statistically similar.
+
